@@ -6,7 +6,7 @@
 
 
 @import 'components/article';
-
+@import 'components/consent';
 @import 'components/subscribe';
 @import 'components/audioPlayer';
 @import 'components/contact';
