@@ -1,0 +1,98 @@
+
+.article {
+    position: relative;
+    width:100%;
+    height:100%;
+    padding-top:100px;
+    visibility: hidden;
+
+    &.show {
+        visibility: visible;
+        animation: fadeInLeft 1s ease-in-out; /* Apply the animation */
+      }
+
+    &__date {
+        display: block;
+        font-size:16px;
+    }
+    &__title {
+        display: block;
+        font-size:32px;
+    }
+    &__square {
+        position: absolute;
+        background-color: var(--dark-green);
+        width:400px;
+        height:400px;
+        z-index:-1;
+        border-radius:2rem;
+        transform:translate(-50%, -25%);
+        transition: transform 2s;
+        @media only screen and (max-width: 768px) {
+        transition-delay: .5s;
+        }
+
+        .show & {
+            
+            @media only screen and (max-width: 768px) {
+            transform: translate(0,2rem) scale(1.5);
+            }
+        }
+    }
+
+    &__image {
+        border-radius: 2rem;
+    }
+
+    &__anchor {
+        text-decoration: none;
+        color:black;
+    }
+
+    &:hover &__square {
+        transform: translate(0,2rem) scale(1.5);
+        
+    }
+
+    &:hover &__overlay-text {
+        transform: scale(1.1);
+        
+    }
+
+    &__overlay {
+        position: absolute;
+        transition: all .5s;
+        z-index: 2;
+        font-size: 16px;
+        bottom:0;
+        padding:2rem;
+        background: linear-gradient(to top, rgba(255,255,255,0.5), transparent);
+        border-radius: 2rem;
+        width:100%;
+        height:80%;
+        display: flex;
+        justify-content: start;
+        align-items: end;
+        pointer-events: none;
+
+    }
+    &__overlay-text {
+        display: flex;
+        gap:.8rem;
+        transition: transform .5s;
+        align-items: center;
+        @media only screen and (max-width: 768px) {
+            transition-delay: 2s;
+        }
+        .show & {
+            @media only screen and (max-width: 768px) {
+            transform: scale(1.1);
+            }
+        }
+        & img {
+            width:2rem;
+            height:2rem;
+        }
+    }
+
+}

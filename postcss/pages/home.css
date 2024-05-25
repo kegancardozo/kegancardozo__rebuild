@@ -1,0 +1,14 @@
+home-hero {
+    &&__heading-one {
+    font-size: var(--h1-text);
+}
+
+.sub-heading {
+    font-size: var(--medium-text);
+}
+
+.standout {
+    font-size: var(--default-text);
+}
+
+}

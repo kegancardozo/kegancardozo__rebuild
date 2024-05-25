@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body style="height:100vh">
+    <button id="listenToButton">Listen To</button>
+    <audio id="audioFile" src="intro.mp3" ></audio>
+
+    <aside class="audio-player" id="audioPlayer">
+        <div class="audio-player__inner">
+            <div class="audio-player__interface">
+                <span class="audio-player__time"> <span id="currentDuration">00:00</span> / <span id="totalDuration">00:00</span></span>
+                <div class="audio-player__progress-container">
+                <span id="progressBar" class="audio-player__progress"></span>
+            </div>
+                <div class="audio-player__controls">
+                    <div class="audio-player__volume-container">
+                        <img class="audio-player__volume-icon" src="volume-icon.svg" />
+                            <div class="audio-player__volume-bar">  
+                              <input type="range"/>
+                            </div>
+                          </div>
+                   
+                    <div class="audio-player__action-container">
+                 <img id="skipBackButton" src="skipBackButton.svg"  class=" audio-player__action-button" />
+
+
+                    <span  id="playPauseAudio" class="audio-player__action-button audio-player__action-button--main" > </span>
+                    <img id="skipForwardButton" src="skipForwardButton.svg"  class="audio-player__action-button" />
+
+                </div>
+                <div class="audio-player__speed-wrapper">
+                <select class="audio-player__speed" id="speedControl">
+                    <option value="0.25">0.25x</option>
+                    <option value="0.5">0.5x</option>
+                    <option value="0.75">0.75x</option>
+                    <option value="1" selected>1x</option>
+                    <option value="1.25">1.25x</option>
+                    <option value="1.5">1.5x</option>
+                    <option value="1.75">1.75x</option>
+                    <option value="2">2x</option>
+                    <option value="2.25">2.25x</option>
+                    <option value="2.5">2.5x</option>
+                    <option value="2.75">2.75x</option>
+                    <option value="3">3x</option>
+                </select>
+                </div>
+
+                </div>
+        </div>
+    </aside>
+
+    <script src="audioPlayer.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body {
+    font-family: 'Signika', serif;
+}
+
+
+.heading-massive {
+    font-family: 'Signika', serif;
+    font-size: var(--text-massive);
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,.25));
+    margin-bottom:1.6rem;
+    transform: translateX(-4px);
+}
+.heading-one {
+    font-size: var(--h1-text);
+}
+
+.sub-heading {
+    font-family: 'Signika', serif;
+    font-size: var(--medium-text);
+    font-weight: 600;
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,.25)) 
+}
+
+.standout {
+    font-size: var(--default-text);
+    font-weight: 700;
+}

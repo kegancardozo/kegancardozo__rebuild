@@ -1,0 +1,80 @@
+.contact {
+    background: linear-gradient(to right, #FBF0FF, #F2FEFB, #F2FFF6);
+    height:100vh;
+    padding:12rem 0;
+
+    &__form {
+        width:36%;
+        @media only screen and (max-width: 768px) {
+            width:70%;
+        }
+        padding:4rem 8vw;
+        margin: auto;
+        background-color: #FCFCFC;
+        border-radius: 2rem;
+        height:500px;
+        display: flex;
+        gap:2rem;
+        flex-direction: column;
+        align-items: center;
+        filter: drop-shadow(0px 4px 4px rgba(0,0,0,.25)) 
+
+    }
+
+    &__input {
+        border: solid #ADADAD 1px;
+        background-color: #fcfcfc;
+        filter: drop-shadow(0px 4px 4px rgba(0,0,0,.25));
+        border-radius:4rem;
+        width:100%;
+        height:3.2rem;
+        &:focus {
+            filter: drop-shadow(0px -2px 4px #3CE76E) 
+            drop-shadow(2px 2px 4px #51E3FF)
+            drop-shadow(-2px 2px 4px #DC88FF);
+            outline:none;
+            border: none;
+        }
+    }
+
+    &__label {
+        font-size: 16px;
+        font-weight:600;
+        filter: drop-shadow(0px 4px 4px rgba(0,0,0,.25));
+        color:#0f0f0f;
+    }
+
+    &__textarea {
+        border: solid #ADADAD 1px;
+        background-color: #fcfcfc;
+        filter: drop-shadow(0px 4px 4px rgba(0,0,0,.25));
+        border-radius:2rem;
+        width:100%;
+        height:20rem;
+        &:focus {
+            filter: drop-shadow(0px -2px 4px #3CE76E) 
+            drop-shadow(2px 2px 4px #51E3FF)
+            drop-shadow(-2px 2px 4px #DC88FF);
+            outline:none;
+            border: none;
+        }
+    }
+
+    &__submit {
+        border: solid #ADADAD 1px;
+        background-color: #fcfcfc;
+        filter: drop-shadow(0px 4px 4px rgba(0,0,0,.25));
+        border-radius:4rem;
+        width:50%;
+        font-weight: 700;
+        font-size: 20px;
+        height:5.2rem;
+        &:focus {
+            filter: drop-shadow(0px -2px 4px #3CE76E) 
+            drop-shadow(2px 2px 4px #51E3FF)
+            drop-shadow(-2px 2px 4px #DC88FF);
+            outline:none;
+            border: none;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+
+
+@custom-media --tiny (width <= 400px);
+@custom-media --small (width <= 768px);
+@custom-media --medium (width <= 1200px);
+@custom-media --large (width <= 1800px);
+@custom-media --oversized (width > 1800px);
+
+
+:root {
+    /* TEXT */
+    --min-text: 12px;
+    --small-text: max(12px,1.6rem);
+    --default-text: max(16px,2rem);
+    --medium-text:max(18px,2.2rem);
+    --h3-text:max(28px,4rem);
+    --h2-text:4.4rem;
+    --h1-text:max(5.2rem, 6rem);
+    --text-massive:max(5.2rem, 6rem);
+
+    --spacing-small: .8rem;
+
+
+    /* COLOUR */
+    --base-black:#0C0C0C;
+    --base-white:#FCFCFC;
+
+    --light-purple:#FBF0FF;
+    --dark-purple:#E8BAFB;
+    --vibrant-purple:#DC88FF;
+
+    --light-green:#F2FFF6;
+    --dark-green:#90EEAC;
+    --vibrant-green:#3CE76E;
+
+    --light-blue:#F2FDFF;
+    --dark-blue:#8FEDFF;
+    --vibrant-blue:#51E3FF;
+
+}

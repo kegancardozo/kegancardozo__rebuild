@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Player</title>
+  <script src="https://www.youtube.com/player_api"></script>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    #player {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <div id="player" style="transform:scale(1.2)"></div>
+
+  <script>
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        videoId: 'eun6P4be_jE', // Replace VIDEO_ID with your YouTube video ID
+        playerVars: {
+          controls: 1, // Hide controls
+          modestbranding: 1, // Disable branding
+          playsinline: 1, // Play inline on mobile devices
+          fs: 1, // Allow full screen
+          autoplay:1
+        }
+      });
+    }
+  </script>
+</body>
+</html>

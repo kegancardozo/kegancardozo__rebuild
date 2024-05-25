@@ -1,0 +1,53 @@
+
+.button {
+    position: relative;
+    background:  linear-gradient(to right, #DC88FF 0%, #51E3FF 50%, #3CE76E 100%);
+    padding: 3px;
+    outline: solid rbg(0,0,0,0);
+    outline-offset: 40px;
+    border-radius: 30px;
+    display: inline-block; /* Make the element shrink to content */
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.75); /* Adjust the values as needed */
+        transition: all .2s;
+    margin:2rem 0;
+
+
+    &__inner {
+            background: #0c0c0c;
+            border-radius: 30px;
+            color: white;
+            padding: .8rem 4rem;
+            font-size:25px;
+            font-weight: bold;
+            cursor: pointer;
+            
+    }
+
+    &__text {
+            background-image: linear-gradient(to right, #DC88FF, #51E3FF, #3CE76E); /* Define the linear gradient */
+            -webkit-background-clip: text; /* For webkit-based browsers */
+            background-clip: text;
+            color: transparent; /* Hide the original text */
+        
+    }
+}
+
+.module-border-wrap:focus, .module-border-wrap:hover {
+
+    outline: solid black;
+    outline-offset: 10px;
+    outline-style: outset;
+    outline-width: 10px;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, .25);
+  
+  }
+
+
+  .link {
+    text-decoration: underline;
+    text-decoration-color: #3CE76E;
+    border-radius: 5px;
+  }
+
+
+
