@@ -13,6 +13,7 @@
     <title>Home</title>
 </head>
 <body>
+    <header>
     <svg class="logo" width="50" height="50" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 287.76 296.71">
         <defs>
         <style>
@@ -47,6 +48,7 @@
     </span>
 
     <div id="subMenu" class="submenu">
+        
         <div class="submenu__topbar">
             <div class="searchbox">
                 <input class="searchbox__input" type="text">
@@ -69,7 +71,7 @@
             </div>
             </div>
             <div  class="submenu__pod-child">
-                <div style="position: relative;" class="article">
+                <div class="article observed">
                     <div class="article__overlay"><span class="article__overlay-text"><img src="read.svg"> Read</span></div>
                     <a class="article__anchor" href="#">
                     <div class="article__square"></div>
@@ -83,7 +85,7 @@
             </div>
             </div>
             <div class="submenu__pod-child">
-                <div style="position: relative;" class="article">
+                <div style="position: relative;" class="article observered">
                     <div class="article__overlay"><span class="article__overlay-text"><img src="read.svg"> Read</span></div>
                     <a class="article__anchor" href="#">
                     <div class="article__square"></div>
@@ -98,8 +100,20 @@
             </div>           
         </div>
     </div>
+    <div>
+    <div id="switch" class="switch off">
+        <div class="switch__button">
+            <div class="switch__button-inner">
+
+            </div>
+        </div>
+        <span class="switch__text switch__text--light ">Light Mode</span>
+        <span class="switch__text switch__text--dark">Dark Mode</span>
+</div>
+
+</header>
     <section class="hero-margin">
-           <div class="columns container max-width-primary align-center full-height">
+           <div class="columns hero max-width-primary align-center full-height">
             <div class="columns--50">
                 <div class="sub-heading">Kegan Cardozo</div> 
                 <div class="underline"><span class="underline__inner"></span></div>
@@ -114,6 +128,7 @@
                         </div>
                     </a>
             </div>
+            
 
             <div class="columns--50">
                 <div class="video-container">
@@ -129,8 +144,9 @@
 
            </div>
         </section>
-      <section class="bentobox max-width-primary">
-        <div class="bentobox__item bentobox__item--span-2 cell cell--purple observed">
+      <section class="container-thin">
+        <div class="bentobox max-width-primary observed">
+        <div class="bentobox__item bentobox__item--span-2 cell cell--purple">
             <p class="stand-out-bigger desktop-hide">Career</p>
             <p class="mobile-hide">
                 <span class="stand-out-bigger">After completing my bachelors in Psychology,</span>
@@ -139,7 +155,7 @@
                  agency.
                 </p>
         </div>
-        <div class="bentobox__item cell cell--gradient observed">
+        <div class="bentobox__item cell cell--gradient">
             <a href="#">
             <div class="cell--inner-black">
                 <img src="youtube-icon.svg">
@@ -147,47 +163,47 @@
         </a>
         </div>
           
-            <div class="bentobox__item bentobox__item--span-h-2 cell cell--blue observed">
+            <div class="bentobox__item bentobox__item--span-h-2 cell cell--blue">
                 <p class="stand-out-bigger desktop-hide">Intrests</p>
                 <p class="mobile-hide"><span class="stand-out-bigger">I have a keen interest in</span> philosophy, game theory, politics and health.
                      I also like a good debate, playing guitar, poker,
                       and occasional video game or film.</p>
                 </div>
-                <div class="bentobox__item cell cell--gradient observed">
+                <div class="bentobox__item cell cell--gradient">
                     <div class="cell--inner-black">
                         <img src="youtube-icon.svg">
                     </div>
            
                     </div>
-                    <div class="bentobox__item cell cell--gradient observed">
+                    <div class="bentobox__item cell cell--gradient">
                         <div class="cell--inner-black">
                             <img src="youtube-icon.svg">
                         </div>
                     </div>
-                    <div class="bentobox__item cell cell--gradient observed">
+                    <div class="bentobox__item cell cell--gradient">
          
                             <div class="cell--inner-black">
                                 <img src="youtube-icon.svg">
                             </div>
 
                     </div>
-                    <div class="bentobox__item cell  cell--gradient observed">
+                    <div class="bentobox__item cell  cell--gradient">
                         <div class="cell--inner-black">
                             <img src="youtube-icon.svg">
                 </div>
                     </div>
     
-                    <div class="bentobox__item bentobox__item--span-2 cell  cell--green observed">
+                    <div class="bentobox__item bentobox__item--span-2 cell  cell--green">
                         <p class="stand-out-bigger desktop-hide">Studies</p>
                     <p class="mobile-hide"><span class="stand-out-bigger">I am currently looking to learn more about </span> graphic design, creating video content, paid advertising and social media.</p>
                     </div>
-                    <div class="bentobox__item  cell cell--gradient observed">
+                    <div class="bentobox__item  cell cell--gradient">
                         <div class="cell--inner-white">
                         <p style="font-weight: 700;font-size: 16px;" class="desktop-hide">Projects</p>
                     <p class="standout-bigger mobile-hide">Find out more about my projects </p>
                 </div>
                     </div>  
-
+                </div>
       </section>
       <div>
       <section class="container-40 top-margin-large bottom-margin-large">
@@ -206,7 +222,7 @@
         </div>
 
         <div class="slider">
-            <div style="position: relative;" class="article">
+            <div class="article observed">
                 <div class="article__overlay"><span class="article__overlay-text"><img src="read.svg"> Read</span></div>
                 <a class="article__anchor" href="#">
                 <div class="article__square"></div>
@@ -218,7 +234,7 @@
           
         </a>
     </div>
-    <div style="position: relative;" class="article">
+    <div class="article observed">
         <div class="article__overlay"><span class="article__overlay-text"><img src="read.svg"> Read</span></div>
         <a class="article__anchor" href="#">
         <div class="article__square"></div>
@@ -230,7 +246,7 @@
   
 </a>
 </div>
-<div style="position: relative;" class="article">
+<div class="article observed">
     <div class="article__overlay"><span class="article__overlay-text"><img src="read.svg"> Read</span></div>
     <a class="article__anchor" href="#">
     <div class="article__square"></div>
@@ -273,33 +289,39 @@
         </div>
         </form>
       </section>
-      <footer>
-        <div>
-            <span> Information</span>
-            <ul>
-                <li>Projects</li>
-                <li>Posts</li>
-                <li>Donate</li>
-                <li>About</li>
-            </ul>
+      <footer class="footer">
+        <div class="footer__column">
+            <div class="footer__blue-square">
+                <span class="footer__heading"> Information</span>
+                <ul class="footer__information-links">
+                    <li>Projects</li>
+                    <li>Posts</li>
+                    <li>Donate</li>
+                    <li>About</li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <span> Follow Me</span>
-            <ul>
-                <li>LinkedIn</li>
-                <li>Instagram</li>
-                <li>TikTok</li>
-                <li>X</li>
-                <li>YouTube</li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li>Terms</li>
-                <li>Cookies</li>
-                <li>Privacy</li>
-            </ul>
-            <span>Copyright © 2022 Kegan Cardozo </span>
+        <div class="footer__column">
+            <div class="footer__green-square">
+                <span class="footer__heading"> Follow Me</span>
+                <ul class="footer__follow-links">
+                    <li>LinkedIn</li>
+                    <li>Instagram</li>
+                    <li>TikTok</li>
+                    <li>X</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+           
+            <div class="footer__legal">
+                <div class="footer__purple-square"></div>
+                <ul class="footer__legal-links">
+                    <li>Terms</li>
+                    <li>Cookies</li>
+                    <li>Privacy</li>
+                </ul>
+                <span class="footer__copyright">Copyright © 2022 Kegan Cardozo </span>
+            </div>
         </div>
       </footer>
       <audio id="audioFile" src="intro.mp3" ></audio>
@@ -367,6 +389,7 @@
      }
      </script>
        <script src="index.js"></script>
+       <script src="theme.js"></script>
        <script src="menu.js"></script>
        <script src="audioPlayer.js"></script>
        <script src="observer.js"></script>

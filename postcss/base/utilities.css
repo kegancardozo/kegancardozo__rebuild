@@ -43,6 +43,12 @@
     margin: auto;
 }
 
+.container-thin {
+    width:94%;
+    margin: auto;
+}
+
+
 .container-40 {
     width:40%;
     margin: auto;

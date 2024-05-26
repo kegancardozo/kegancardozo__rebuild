@@ -7,6 +7,8 @@
 
 @import 'components/article';
 @import 'components/consent';
+@import 'components/switch';
+@import 'components/footer';
 @import 'components/subscribe';
 @import 'components/audioPlayer';
 @import 'components/contact';

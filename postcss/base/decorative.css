@@ -46,6 +46,16 @@
 }
 
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
 @keyframes fadeInLeft {
     from {
       transform: translateX(-200px);
@@ -56,6 +66,14 @@
       opacity: 1;
     }
   }
+
+  @keyframes fadeInBottom {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
 
 
 .fade-in-left {

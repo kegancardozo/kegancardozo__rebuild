@@ -38,7 +38,11 @@
 }
 html {
     overflow-x: hidden;
-    font-size:62.5%
+    font-size:62.5%;
+    box-sizing:border-box;
+    max-width: 100vw;
+    padding: 0;
+    margin:0
 }
 @media only screen and (max-width: 768px) {
 html {
@@ -50,6 +54,9 @@ body {
     overflow-x:hidden;
     width:100%;
     box-sizing:border-box;
+    padding-right:18px;
+    background-color: #FCFCFC;
+    background-color: var(--base-white);
 }
 main {
     overflow-x:hidden; 
@@ -145,6 +152,10 @@ body {
     width:90%;
     margin: auto;
 }
+.container-thin {
+    width:94%;
+    margin: auto;
+}
 .container-40 {
     width:40%;
     margin: auto
@@ -233,6 +244,14 @@ body {
     0% { left: -200px; }
     100% { left: 0px; }
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes fadeInLeft {
     from {
       transform: translateX(-200px);
@@ -240,6 +259,12 @@ body {
     }
     to {
       transform: translateX(0);
+      opacity: 1;
+    }
+  }
+@keyframes fadeInBottom {
+    to {
+      transform: translateY(0);
       opacity: 1;
     }
   }
@@ -343,6 +368,192 @@ body {
             width:2rem;
             height:2rem;
         }
+.cookie_banner__inner {
+        
+    }
+.switch {
+    border-radius:2rem;
+    background-color: #fcfcfc;
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,.25));
+    padding: 4px;
+    width:10.8rem;
+    height:3.2rem;
+    position: absolute;
+    top:2rem;
+    right:16rem;
+    transition: background .5s;
+    cursor: pointer;
+    }
+.switch__button {
+        border-radius:2rem;
+        background:  linear-gradient(to right, #DC88FF 0%, #51E3FF 50%, #3CE76E 100%);
+        padding: 2px;
+        width:2.4rem;
+        position: absolute;
+        transition: all .5s;
+        top:.4rem;
+        filter: drop-shadow(0px -2px 4px #3CE76E) 
+        drop-shadow(2px 2px 4px #51E3FF)
+        drop-shadow(-2px 2px 4px #DC88FF);
+    }
+.switch__button-inner {
+            height:2rem;
+            width:2rem;
+            border-radius: 2rem;
+
+        }
+.switch__text {
+            position: absolute;
+            top:50%;
+            font-weight: 500;
+            font-size: 1.2rem;
+            transform:translateY(-50%);
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none;    /* Firefox */     /* Internet Explorer/Edge */
+            user-select: none;         /* Standard */
+            transition: opacity .5s;
+            transition-delay: .15s;
+        }
+.switch__text--light {
+                right:1.2rem;
+                color:#0c0c0c;
+            }
+.switch__text--dark {
+                left:1.2rem;
+                color:#fcfcfc;
+            }
+.on .switch__text--dark, .off .switch__text--light {
+   opacity:1;
+   visibility:visible
+}
+.off .switch__text--dark, .on .switch__text--light {
+    opacity:0;
+    visibility:hidden;
+ }
+.on.switch {
+    background: #0c0c0c;
+    filter: drop-shadow(0px 4px 4px rgba(255,255,255,.25));
+
+}
+.off.switch {
+    background: #fcfcfc;
+    
+}
+.off .switch__button {
+    transform: translateX(0);
+}
+.off .switch__button-inner {
+    background: #fcfcfc;
+}
+.on .switch__button-inner {
+    background: #0c0c0c;
+}
+.on .switch__button {
+    transform: translateX(300%);
+}
+.footer {
+    display:flex;
+    width:90%;
+    margin: 4rem auto
+}
+@media only screen and (max-width: 768px) {
+.footer {
+       display: block
+}
+      }
+.footer__column {
+        width:50%;
+        position: relative;
+        height:48rem
+    }
+@media only screen and (max-width: 768px) {
+
+    .footer__column {
+            width: 100%;
+            margin-bottom:8rem
+    }
+          }
+.footer__heading {
+        font-size: 32px;
+    }
+.footer__blue-square {
+        position:absolute;
+        border-radius: 2rem;
+        width:48rem;
+        height:48rem;
+        background-color: #8FEDFF;
+        background-color: var(--dark-blue);
+        z-index:-1;
+        top:0;
+        left:0;
+        padding:4rem;
+    }
+.footer__green-square {
+        position:absolute;
+        padding:4rem;
+        border-radius: 2rem;
+        width:32rem;
+        height:32rem;
+        background-color: #90EEAC;
+        background-color: var(--dark-green);
+        z-index:-1;
+        top:0;
+        right:0;
+    }
+.footer__legal {
+        position: absolute;
+        bottom:0;
+        right:0;
+        width:32rem;
+        height:8rem;
+        align-content: center;
+        padding-left:4rem
+    }
+@media only screen and (max-width: 768px) {
+    .footer__legal {
+      left:0
+    }
+          }
+.footer__legal-links {
+        display: flex;
+        list-style: none;
+        grid-gap:1rem;
+        gap:1rem;
+        font-size: 16px;
+        margin-bottom:.4rem;
+    }
+.footer__information-links {
+        display: flex;
+        list-style: none;
+        grid-gap:4rem;
+        gap:4rem;
+        margin-top:2rem;
+        font-size: 16px;
+        flex-wrap: wrap;
+    }
+.footer__follow-links {
+        margin-top:2rem;
+        font-size: 16px;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap:4rem;
+        gap:4rem;
+    }
+.footer__copyright {
+        font-size: 12px;
+    }
+.footer__purple-square {
+        position: absolute;
+        bottom: 0;
+        left:0;
+        width:8rem;
+        height:8rem;
+        z-index: -1;
+        background-color: #E8BAFB;
+        background-color: var(--dark-purple);
+        border-radius: 1rem;
+    }
 .subscribe {
     height:20rem;
     /* background-image: url("grain.png"); */
@@ -751,7 +962,7 @@ body {
     position:absolute;
     display:flex;
     top:0;
-    right:0;
+    right:-2px;
     justify-content: space-between;
     width:100%;
     z-index:10;
@@ -904,21 +1115,22 @@ body {
     gap: .8rem; /* Gap between grid items */
     font-size: 2.4rem;
     position: relative;
+    transition: all 2s;
+    transform:scale(0.9);
+    opacity: 0
 }
+.bentobox.show {
+        opacity: 1;
+        transform:scale(1);
+
+      }
 .bentobox__item {
             /* Define styles for grid items */
             align-content: center;
             padding: 5.8rem 4.8rem;
             text-align: center;
-            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
-            transition: all 2s;
-            opacity: 0;
-            transform: scale(.01)
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1)
     }
-.bentobox__item.show {
-                opacity: 1;
-                transform: scale(1);
-              }
 @media only screen and (max-width: 768px) {
     
     .bentobox__item {
